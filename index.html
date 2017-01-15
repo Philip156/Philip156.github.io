@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Phil Savenok</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Damion|Montserrat|Playfair+Display">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!---------- Preloader ---------->
+        <div class="container-fluid">
+            <div class="col-md-12" id="preloader">                
+                <div class="container">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="img/loader.gif" id="loader"/>
+                    </div>                     
+                </div>                             
+            </div>
+        </div>
+        <!---------- INFO Modal ---------->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="myModalLabel">About me</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>I’m Philip Savenok, a 29-year-old <span>Front-End Developer</span> from New York where I work and study. With a background in <span>engineering,</span> my strength lies in <span>problem-solving mind.</span> I like to <span>develop</span> and <span>create</span> web applications. Keeping things <span>orginized</span> helps me to increase my efficiency.</p>
+                        <p>Proficient with:</p>
+                        <ul>
+                            <li><img src="img/html.png" title="HTML5" data-toggle="tooltip" data-placement="bottom"/></li>
+                            <li><img src="img/javaScript.png" title="JavaScript" data-toggle="tooltip" data-placement="bottom"/></li>
+                            <li><img src="img/jQuery.png" title="jQuery" data-toggle="tooltip" data-placement="bottom"/></li>
+                            <li><img src="img/Sass.png" title="Sass" data-toggle="tooltip" data-placement="bottom"/></li>
+                            <li><img src="img/AngularJS.png" title="AngularJS" data-toggle="tooltip" data-placement="bottom"/></li>
+                        </ul>
+                        <p>If you want to know more about my work, please feel free to email me.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------- CONTACT Modal ---------->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="contactModalLabel">Let's talk...</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label" for="senderName">Name</label>
+                                <input type="text" class="form-control" id="senderName">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="senderEmail">Email</label>
+                                <input type="email" class="form-control" id="senderEmail">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default ">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!---------- MENU ---------->
+        <div class="button_container visible-xs" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Info</a></li>
+                    <li><a href="#supportingSection">Projects</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+                </ul>
+            </nav>
+        </div>        
+        <!---------- Header ---------->
+        <div class="header" id="headerSection">
+            <div class="container">
+                <div class="row">                   
+                    <div class="col-md-12">
+                        <ul>
+                            <li class="pull-left" id="myLogo"><a href="index.html">PS</a></li>
+                            <li class="sliding-middle-out hidden-xs" id="goFirst"><a href="#" data-toggle="modal" data-target="#myModal">Info</a></li>
+                            <li class="sliding-middle-out hidden-xs" id="goSecond"><a href="#supportingSection" id="supporting">Projects</a></li>
+                            <li class="sliding-middle-out hidden-xs" id="goThird"><a href="#" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+                            <li class="pull-right sliding-middle-out hidden-xs" id="goFourth"><a href="#"><span class="glyphicon glyphicon-tint"></span></a></li>                            
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>        
+                
+        <!---------- Main ---------->
+        <div class="main gradientTarget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <h1>Philip Savenok</h1>
+                        <p>Interactive Front-End Developer</p>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal">About me</button>
+                    </div>
+                </div>
+            </div>
+        </div>         
+        <!---------- Extras ---------->
+        <div class="extras" id="extrasSection">
+            <div class="container">
+                <h4>MADE IN NYC</h4> 
+                <h1>brand & web design for you</h1>
+                <h2>Philip Savenok.</h2>                
+            </div>
+        </div>
+        <!---------- Supporting ---------->
+        <div class="supporting" id="supportingSection">
+            <div class="container" id="supportingTop">
+                 <div class="row">
+                    <ul>
+                        <li class="pull-left">Latest Works</li>
+                        <li></li>
+                        <li class="pull-right">More stories coming soon...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                   
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#">
+                            <img src="img/ertln_spq1s-andrew-neel.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#">
+                            <img src="img/7r-z1umwfau-paula-borowska.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#">
+                            <img src="img/p-alejandro-escamilla.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#">
+                            <img src="img/p-pratama.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#">
+                            <img src="img/c6h9mwoet4y-grant-mccurdy.jpg"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#">
+                            <img src="img/p-greg-rakozy.jpg"/>
+                        </a>
+                    </div>
+                   
+                </div>
+                <div class="row" id="supportingBot">
+                    <h1>Want to find out more?</h1>
+                    <a href="#" data-toggle="modal" data-target="#contactModal">Contact me</a>
+                </div>
+            </div>
+        </div>        
+                
+        <div class="footer">
+            <div class="container">
+                <div class="row">                   
+                    <div class="col-md-12">
+                        <a href="#" id="homeBtn">HOME</a>
+                        <ul>
+                            <li class="pull-left">©2016 Phil Savenok</li>
+                            <li class="pull-right"><a href="#"><img src="img/linkedin.png"/></a></li>
+                            <li class="pull-right"><a href="#"><img src="img/facebook.png"/></a></li>
+                            <li class="pull-right"><a href="#"><img src="img/twitter%20(2).png"/></a></li>
+                            <li class="pull-right"><a href="mailto:philsavenok@gmail.com"><img src="img/gmail.jpg"/></a></li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>        
+        <!-- jQuery  -->
+        <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- Bootstarps script  -->
+        <script type="text/javascript" src="css/bootstrap.min.js"></script>
+        <!-- gradientify  -->
+        <script type="text/javascript" src="js/jquery.gradientify.min.js"></script>
+        <!--wow for css menu -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+        <!-- main javascipt  -->
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>        
+    </body>
+</html>
